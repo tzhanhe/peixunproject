@@ -1,6 +1,8 @@
 package com.czbank.fupin.domain;
 
-public class ShopCart{
+import java.io.Serializable;
+
+public class ShopCart implements Serializable {
     private String id;
     private int amount;
     private  String product_id;
