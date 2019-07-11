@@ -1,4 +1,4 @@
-package com.czbank.fupin.serviceImpl;
+package com.czbank.fupin.service.impl;
 
 import com.czbank.fupin.domain.Product;
 import com.czbank.fupin.service.Find;
