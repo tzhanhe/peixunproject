@@ -1,4 +1,4 @@
-package com.czbank.fupin.daoImpl;
+package com.czbank.fupin.dao.impl;
 
 import com.czbank.fupin.dao.Find;
 import com.czbank.fupin.domain.Product;
