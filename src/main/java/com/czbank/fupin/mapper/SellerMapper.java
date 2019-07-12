@@ -9,8 +9,8 @@ import java.util.List;
 @Mapper
 @Repository
 public interface SellerMapper {
-    @Insert("insert into product(productName,info,price,stock,ownerId)" +
-            "values(#{productName},#{info},#{price},#{stock},#{ownerId})")
+    @Insert("insert into product(productName,info,price,stock,ownerId,countyId)" +
+            "values(#{productName},#{info},#{price},#{stock},#{ownerId},#{countyId})")
     int productInsert(Product product);
     @Delete("")
     int productDelete(Product product);

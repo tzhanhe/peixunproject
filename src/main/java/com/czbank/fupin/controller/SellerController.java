@@ -34,7 +34,8 @@ public class SellerController {
         product.setInfo(info);
         product.setStock(Integer.parseInt(stock));
         product.setOwnerId(Integer.parseInt(ownerId));
-
+        product.setCountyId(1);
+        product.setProvinceId(2);
         return sellerService.productInsert(product);
     }
 
