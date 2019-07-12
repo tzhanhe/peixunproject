@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.text.SimpleDateFormat;
 
 /**
  * @ClassName SellerController
@@ -21,7 +20,7 @@ import java.text.SimpleDateFormat;
 public class SellerController {
     @Autowired
     private SellerService sellerService;
-    @RequestMapping("/calendarInsert")
+    @RequestMapping("/productInsert")
     public Object productInsert(HttpServletRequest req, HttpServletResponse resp){
         Product product = new Product();
         String productName = req.getParameter("productName");

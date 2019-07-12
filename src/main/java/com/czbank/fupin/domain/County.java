@@ -1,51 +1,51 @@
 package com.czbank.fupin.domain;
 
 import java.io.Serializable;
-
+/**
+ * @Author Leo
+ * @Description //TODO
+ * @Date 2019/7/12
+ **/
 public class County implements Serializable {
-    private String id;
-    private String name;
-    private String province;
+    private int id;
+    //县名称
+    private String countyName;
+    //省id
+    private int provinceId;
 
     public County() {
     }
 
-    public County(String id, String name, String province) {
-        this.id = id;
-        this.name = name;
-        this.province = province;
-    }
-
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getCountyName() {
+        return countyName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCountyName(String countyName) {
+        this.countyName = countyName;
     }
 
-    public String getProvince() {
-        return province;
+    public int getProvinceId() {
+        return provinceId;
     }
 
-    public void setProvince(String province) {
-        this.province = province;
+    public void setProvinceId(int provinceId) {
+        this.provinceId = provinceId;
     }
 
     @Override
     public String toString() {
         return "County{" +
                 "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", province='" + province + '\'' +
+                ", countyName='" + countyName + '\'' +
+                ", provinceId='" + provinceId + '\'' +
                 '}';
     }
 }

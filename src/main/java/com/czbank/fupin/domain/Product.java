@@ -21,6 +21,10 @@ public class Product implements Serializable {
     private int countyId;
     //所属用户的id
     private int ownerId;
+    //图片路径
+    private String picPath;
+    //种类
+    private int category;
 
 
     public int getId() {
@@ -85,6 +89,22 @@ public class Product implements Serializable {
 
     public void setCountyId(int countyId) {
         this.countyId = countyId;
+    }
+
+    public String getPicPath() {
+        return picPath;
+    }
+
+    public void setPicPath(String picPath) {
+        this.picPath = picPath;
+    }
+
+    public int getCategory() {
+        return category;
+    }
+
+    public void setCategory(int category) {
+        this.category = category;
     }
 
     @Override
