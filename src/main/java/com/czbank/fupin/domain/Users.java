@@ -3,7 +3,7 @@ package com.czbank.fupin.domain;
 import java.io.Serializable;
 
 public class Users implements Serializable {
-    private String id;
+    private int id;
     private String name;
     private String password;
     private String address;
@@ -12,7 +12,7 @@ public class Users implements Serializable {
     public Users() {
     }
 
-    public Users(String id, String name, String password, String address, String phone) {
+    public Users(int id, String name, String password, String address, String phone) {
         this.id = id;
         this.name = name;
         this.password = password;
@@ -20,11 +20,11 @@ public class Users implements Serializable {
         this.phone = phone;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

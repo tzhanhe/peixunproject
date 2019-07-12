@@ -4,25 +4,26 @@ import java.io.Serializable;
 
 public class Product implements Serializable {
     private int id;
-    private String name;
-    private float price;
-    private String intro;
+    private String productName;
+    private double price;
+    private String info;
     private int stock;
+    private int ownerId;
 
     public int getId() {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getProductName() {
+        return productName;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public String getIntro() {
-        return intro;
+    public String getInfo() {
+        return info;
     }
 
     public int getStock() {
@@ -33,29 +34,37 @@ public class Product implements Serializable {
         this.id = id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
-    public void setIntro(String intro) {
-        this.intro = intro;
+    public void setInfo(String info) {
+        this.info = info;
     }
 
     public void setStock(int stock) {
         this.stock = stock;
     }
 
+    public int getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
+    }
+
     @Override
     public String toString() {
         return "Product{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", name='" + productName + '\'' +
                 ", price=" + price +
-                ", intro='" + intro + '\'' +
+                ", intro='" + info + '\'' +
                 ", stock=" + stock +
                 '}';
     }
