@@ -23,6 +23,8 @@ public class Product implements Serializable {
     private int ownerId;
     //图片路径
     private String picPath;
+    //种类
+    private int category;
 
 
     public int getId() {
@@ -95,6 +97,14 @@ public class Product implements Serializable {
 
     public void setPicPath(String picPath) {
         this.picPath = picPath;
+    }
+
+    public int getCategory() {
+        return category;
+    }
+
+    public void setCategory(int category) {
+        this.category = category;
     }
 
     @Override

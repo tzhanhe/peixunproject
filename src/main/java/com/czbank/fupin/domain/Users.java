@@ -4,20 +4,13 @@ import java.io.Serializable;
 
 public class Users implements Serializable {
     private int id;
-    private String name;
+    private String userName;
     private String password;
     private String address;
-    private String  phone;
+    private String phone;
+    private double balance;
 
     public Users() {
-    }
-
-    public Users(int id, String name, String password, String address, String phone) {
-        this.id = id;
-        this.name = name;
-        this.password = password;
-        this.address = address;
-        this.phone = phone;
     }
 
     public int getId() {
@@ -28,12 +21,12 @@ public class Users implements Serializable {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPassword() {
@@ -60,14 +53,11 @@ public class Users implements Serializable {
         this.phone = phone;
     }
 
-    @Override
-    public String toString() {
-        return "Users{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", password='" + password + '\'' +
-                ", address='" + address + '\'' +
-                ", phone='" + phone + '\'' +
-                '}';
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 }
