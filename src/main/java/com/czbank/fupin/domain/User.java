@@ -2,7 +2,7 @@ package com.czbank.fupin.domain;
 
 import java.io.Serializable;
 
-public class Users implements Serializable {
+public class User implements Serializable {
     private int id;
     private String userName;
     private String password;
@@ -10,7 +10,7 @@ public class Users implements Serializable {
     private String phone;
     private double balance;
 
-    public Users() {
+    public User() {
     }
 
     public int getId() {
