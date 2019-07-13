@@ -2,7 +2,7 @@ package com.czbank.fupin.service.impl;
 
 import com.czbank.fupin.mapper.FindMapper;
 import com.czbank.fupin.domain.Product;
-import com.czbank.fupin.domain.Users;
+import com.czbank.fupin.domain.User;
 import com.czbank.fupin.service.FindService;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -29,7 +29,7 @@ public class FindServiceImpl implements FindService {
     }
 
     @Override
-    public List<Users> findAllUsers() {
+    public List<User> findAllUsers() {
         return findMapper.findAllUsers();
     }
 

@@ -2,7 +2,7 @@ package com.czbank.fupin.controller;
 
 import com.czbank.fupin.domain.Product;
 import com.czbank.fupin.mapper.FindMapper;
-import com.czbank.fupin.domain.Users;
+import com.czbank.fupin.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,7 +33,7 @@ public class AllListController {
     @ResponseBody
     public String findAll(){
 
-        Users user = findMapper.findAllUsers().get(0);
+        User user = findMapper.findAllUsers().get(0);
         return user.toString();
     }
 }
