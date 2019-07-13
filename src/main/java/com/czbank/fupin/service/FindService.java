@@ -6,6 +6,9 @@ import com.czbank.fupin.domain.Users;
 import java.util.List;
 
 public interface FindService {
-    List<Product> findAll();
+    List<Product> findAllProduct();
+    List<Product> findProductByProvince(int ProvinceId);
+    List<Product> findProductByCategory(int category);//根据商品种类进行查找
     List<Users> findAllUsers();
+
 }
