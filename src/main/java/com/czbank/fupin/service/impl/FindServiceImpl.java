@@ -5,17 +5,22 @@ import com.czbank.fupin.domain.Product;
 import com.czbank.fupin.domain.User;
 import com.czbank.fupin.service.FindService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Service
 public class FindServiceImpl implements FindService {
     @Autowired
     private FindMapper findMapper;
     @Override
     public List<Product> findAllProduct() {
-
         return findMapper.findAllProduct();
+    }
+
+    @Override
+    public Product findProductById(int productId) {
+        return findMapper.findProductById(productId);
     }
 
     @Override
