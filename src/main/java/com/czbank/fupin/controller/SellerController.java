@@ -28,13 +28,18 @@ public class SellerController {
         String info = req.getParameter("info");
         String stock = req.getParameter("stock");
         String ownerId = req.getParameter("ownerId");
+        String provinceId = req.getParameter("provinceId");
+        String picPath = req.getParameter("picPath");
+        String countyId = req.getParameter("countyId");
         product.setProductName(productName);
         product.setPrice(Double.parseDouble(price));
         product.setInfo(info);
         product.setStock(Integer.parseInt(stock));
         product.setOwnerId(Integer.parseInt(ownerId));
-        product.setCountyId(1);
-        product.setProvinceId(2);
+        product.setProvinceId(Integer.parseInt(provinceId));
+        product.setCountyId(Integer.parseInt(countyId));
+        product.setPicPath(picPath);
+
         return sellerService.productInsert(product);
     }
 

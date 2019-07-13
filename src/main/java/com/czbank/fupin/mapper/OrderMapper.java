@@ -16,20 +16,15 @@ import java.util.List;
 @Mapper
 @Repository
 public interface OrderMapper {
-//    @Insert("insert into product(productName,info,price,stock,ownerId)" +
-//            "values(#{productName},#{info},#{price},#{stock},#{ownerId})")
-//    int productInsert(Order product);
-//    @Delete("")
-//    int productDelete(Order order);
-//    @Update("")
-//    int productUpdate(Order order);
-//    @Select("select * from product where ")
-//    List<Product> allProductSelect(int ownerId);
-    /*select by id
-
-     */
+    /**
+     * @Author Leo
+     * @Description 查找一个订单
+     * @Date 2019/7/13
+     * @Param [orderId]订单id
+     * @return com.czbank.fupin.domain.Order
+     **/
     @Select("one")
-    Order orderSelect(String orderId);
+    Order orderSelectById(String id);
    /**
    * @Description: select by ids
    * @Author: ZhouChaoV
@@ -40,9 +35,8 @@ public interface OrderMapper {
    *
    */
     @Select("duo")
-    List<Order> duoOrderSelect(String orderId);
+    List<Order> orderSelectByIds(String ids);
 
-    @Insert("")
     /**
     * @Description: 生成订单
     * @Author: ZhouChaoV
@@ -52,6 +46,16 @@ public interface OrderMapper {
     * @Exception:
     *
     */
-    Order getOrder(Order order);
+    @Insert("")
+    int orderInsert(Order order);
+    /**
+     * @Author Leo
+     * @Description 根据订单id删除订单
+     * @Date 2019/7/13
+     * @Param [id]
+     * @return int
+     **/
+    @Delete("")
+    int orderDelete(String id);
 
 }

@@ -18,14 +18,20 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
-    @RequestMapping("/orderSelect")
+    @RequestMapping("/orderSelectById")
     @ResponseBody
-    public String orderSelect(){
+    public Object orderSelect(){
         return null;
     }
-    @RequestMapping("/getOrder")
+    @RequestMapping("/orderInsert")
     @ResponseBody
-    public Order getOrder(){
+    public Object orderInsert(){
+
+        return null;
+    }
+    @RequestMapping("/orderDelete")
+    @ResponseBody
+    public Object orderDelete(){
         return null;
     }
 }

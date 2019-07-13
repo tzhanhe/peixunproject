@@ -2,6 +2,7 @@ package com.czbank.fupin.domain;
 
 import java.io.Serializable;
 
+@Deprecated
 public class ShopCart implements Serializable {
     private int id;
     //订单id
